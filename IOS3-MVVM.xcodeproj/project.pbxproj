@@ -58,8 +58,7 @@
 		161E0AE92735A5F400A50EA8 /* IOS3-MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				161E0AEE2735A5F400A50EA8 /* ViewController.swift */,
-				161E0B002735A90600A50EA8 /* ViewModel */,
+				161E0B052735B54500A50EA8 /* Controller */,
 				161E0AFF2735A8FE00A50EA8 /* View */,
 				161E0AFE2735A8E900A50EA8 /* Model */,
 				161E0AEA2735A5F400A50EA8 /* AppDelegate.swift */,
@@ -87,11 +86,12 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		161E0B002735A90600A50EA8 /* ViewModel */ = {
+		161E0B052735B54500A50EA8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				161E0AEE2735A5F400A50EA8 /* ViewController.swift */,
 			);
-			name = ViewModel;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
