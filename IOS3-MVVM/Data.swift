@@ -7,4 +7,7 @@
 
 import Foundation
 
- var data = ["Авиарежим", "Wi-Fi", "Bluetooth", "Сотовая связь","Режим модема" , "VPN", "Уведомления", "Звуки, тактильные сигналы", "Фокусирование", "Экранное время"]
+struct DataForCells {
+    var data: [String] 
+}
+

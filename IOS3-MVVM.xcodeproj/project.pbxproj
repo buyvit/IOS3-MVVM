@@ -14,6 +14,10 @@
 		161E0AF72735A5F700A50EA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161E0AF52735A5F700A50EA8 /* LaunchScreen.storyboard */; };
 		161E0B022735AAA500A50EA8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E0B012735AAA500A50EA8 /* Data.swift */; };
 		161E0B042735AF1E00A50EA8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E0B032735AF1E00A50EA8 /* TableViewCell.swift */; };
+		161E0B082735B83500A50EA8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E0B072735B83500A50EA8 /* ViewModel.swift */; };
+		161E0B0A2735BD9600A50EA8 /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E0B092735BD9600A50EA8 /* TableViewModelType.swift */; };
+		161E0B0D27363A7F00A50EA8 /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E0B0C27363A7F00A50EA8 /* TableViewCellViewModelType.swift */; };
+		161E0B0F27363C6900A50EA8 /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161E0B0E27363C6900A50EA8 /* TableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		161E0AF82735A5F700A50EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161E0B012735AAA500A50EA8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		161E0B032735AF1E00A50EA8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		161E0B072735B83500A50EA8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		161E0B092735BD9600A50EA8 /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
+		161E0B0C27363A7F00A50EA8 /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
+		161E0B0E27363C6900A50EA8 /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,6 @@
 		161E0AE92735A5F400A50EA8 /* IOS3-MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				161E0AEE2735A5F400A50EA8 /* ViewController.swift */,
 				161E0B002735A90600A50EA8 /* ViewModel */,
 				161E0AFF2735A8FE00A50EA8 /* View */,
 				161E0AFE2735A8E900A50EA8 /* Model */,
@@ -82,6 +89,7 @@
 		161E0AFF2735A8FE00A50EA8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				161E0AEE2735A5F400A50EA8 /* ViewController.swift */,
 				161E0B032735AF1E00A50EA8 /* TableViewCell.swift */,
 			);
 			name = View;
@@ -90,8 +98,20 @@
 		161E0B002735A90600A50EA8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				161E0B072735B83500A50EA8 /* ViewModel.swift */,
+				161E0B0E27363C6900A50EA8 /* TableViewCellViewModel.swift */,
+				161E0B0B273636F100A50EA8 /* Protocols */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		161E0B0B273636F100A50EA8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				161E0B092735BD9600A50EA8 /* TableViewModelType.swift */,
+				161E0B0C27363A7F00A50EA8 /* TableViewCellViewModelType.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,10 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161E0B0D27363A7F00A50EA8 /* TableViewCellViewModelType.swift in Sources */,
+				161E0B082735B83500A50EA8 /* ViewModel.swift in Sources */,
 				161E0AEF2735A5F400A50EA8 /* ViewController.swift in Sources */,
 				161E0B042735AF1E00A50EA8 /* TableViewCell.swift in Sources */,
 				161E0B022735AAA500A50EA8 /* Data.swift in Sources */,
 				161E0AEB2735A5F400A50EA8 /* AppDelegate.swift in Sources */,
+				161E0B0F27363C6900A50EA8 /* TableViewCellViewModel.swift in Sources */,
+				161E0B0A2735BD9600A50EA8 /* TableViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
